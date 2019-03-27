@@ -1,0 +1,149 @@
+li {
+  list-style:none;
+}
+.blogimg {
+    width: 300px;
+    height:300px;
+    border-radius: 150px;
+}
+.header{
+  font-weight:bold;
+  font-size:100px;
+  color:black;
+  height:130px;
+  background-color:#efb22f;
+  font-family:Lucida Handwriting;
+}
+.header a:link{
+  text-decoration:none;
+}
+.header a:visited{
+  text-decoration:none;
+  color:black;
+}
+.wrapper {
+  width: 1300px;
+  margin: 20px auto;
+}
+.side-menu {
+  float:left;
+  width:280px;
+  font-weight:bold;
+}
+.side-menu li a{
+  color:black;
+  padding-left:20px;
+  display:block;
+  height: 54px;
+  line-height:54px;
+  background-color:#f1f1f1
+}
+.side-menu a:hover{
+  background-color:#efb22f;
+}
+.side-menu a:link{
+  text-decoration:none;
+}
+.side-menu a:visited{
+  text-decoration:none;
+  color:black;
+}
+.side-menu h2{
+  padding-left:20px;
+}
+.bloglink a{
+  display: block;
+  color: #8a8a8a;
+  padding-left : 20px;
+  height: 40px;
+}
+.contents {
+  float:left;
+  width:900px;
+}
+.project-list li{
+  width:300px;
+  float:left;
+  margin: 50px 50px 50px 50px;
+}
+.addtable{
+  margin:70px 40px 70px 170px;
+  border:solid;
+}
+.write{
+  font-size:40px;
+  font-weight:bold;
+  font-family:Lucida Handwriting;
+}
+.tablename{
+  background-color:#efb22f;
+}
+.hellsei{
+  float:right;
+  width:500px;
+}
+#face{
+  float:left;
+  width:200px;
+  margin:0 50px 0 0;
+}
+article{
+  padding:40px 0 110px 50px;
+  font-size:17px;
+  border:solid;
+  background-image:url(/images/소스.jpg);
+  font-weight:bold;
+}
+article center{
+  font-weight:bold;
+  font-size:40px;
+  font-family:Lucida Handwriting;
+}
+.facewrite{
+  margin: 0 0 0 40px;
+}
+.readtable{
+  margin:70px 40px 70px 170px;
+  width:500px;
+  font-weight:bold;
+  border-bottom:solid;
+  border-top:solid;
+}
+#readname{
+  background-color:#efb22f;
+}
+#readdate{
+  background-color:#efb22f;
+}
+.delbut{
+  float:right;
+}
+.delbut:hover{
+  background-color:#efb22f;
+}
+.guestbooktext{
+  font-size:80px;
+  font-family:Lucida Handwriting;
+}
+.addbut:hover{
+  background-color:#efb22f;
+}
+#login{
+  background-color:#efb22f;
+  font-size:25px;
+  padding:0 0 0 85px;
+}
+#login:hover{
+  background-color:#8a8a8a;
+  color:#f1f1f1;
+}
+#signUp{
+	box-shadow:#8a8a8a 0 0 40px 40px inset;
+  font-size:25px;
+  padding: 0 0 0 70px;
+  color:#000000;
+}
+#signUp:hover{
+  color: #f1f1f1;
+	box-shadow: #efb22f 0 0 20px 20px inset;
+}

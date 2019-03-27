@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="header">
+      <center>
+      <a href="/">Welcome!</a>
+    </center>
+    </div>
+    <div class="wrapper">
+      <div class="side-menu">
+          <ul>
+              <li><a href="/signup" id="signUp">Sign In</a></li>
+              <li><a href="/" id="login">Login</a></li>
+            </ul>
+    <ul>
+      <li><a href="/profile">Profile</a></li>
+      <li><a href="/guestbookAdd">Write in the Guestbook</a></li>
+      <li><a href="/read">Read the Guestbook</a></li>
+    </ul>
+    <h2>Enter a Blog</h2>
+    <ul class="bloglink">
+      <li><a href="http://chojja7.tistory.com" target="_blank">Tistory Blog</a></li>
+      <li><a href="http://chojja.kro.kr" target="_blank">Naver Blog</a></li>
+    </ul>
+  </div>
+  <div class="contents">
+    <ul class="project-list">
+      <form action="/add" method="post">
+        <table class="addtable">
+          <tr>
+            <td colspan=2 class="tablename"><center><p class="write">Writing</p></center></td>
+          </tr>
+          <tr height=50>
+            <td class="tablename">Name</td>
+            <td><input type="text" style="height:40px; width:455px;" name="name"/></td>
+          </tr>
+          <tr height=50>
+            <td class="tablename">Email</td>
+            <td><input type="text" style="height:40px; width:455px;" name="email" placeholder="shoun7188@naver.com"/></td>
+          </tr>
+          <tr height=50>
+            <td class="tablename">Password</td>
+            <td><input type="password" style="height:40px; width:455px;" maxlength=10 placeholder="Max : 10 letters"name="password" /></td>
+          </tr>
+          <tr>
+            <td class="tablename">Living</td>
+            <td><select name="living" style="height:40px; width:455px;">
+              <option value="">---선택---</option>
+              <option value="서울">서울</option>
+              <option value="경기">경기</option>
+            </select></td>
+          </tr>
+          <tr>
+            <td colspan=2><textarea name="content" rows="12" cols="80"></textarea></td>
+          </tr>
+          <tr>
+            <td colspan=2><center><input class="addbut"type="submit" value="Submit" style="width:340px;"/></center></td>
+          </tr>
+        </table>
+      </form>
+  </div>
+  </div>
+  </body>
+</html>

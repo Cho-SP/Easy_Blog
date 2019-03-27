@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="header">
+      <center>
+      <a href="/">Welcome!</a>
+    </center>
+    </div>
+    <div class="wrapper">
+      <div class="side-menu">
+          <ul>
+              <li><a href="/signup" id="signUp">Sign In</a></li>
+              <li><a href="/" id="login">Login</a></li>
+            </ul>
+    <ul>
+      <li><a href="/profile">Profile</a></li>
+      <li><a href="/guestbookAdd">Write in the Guestbook</a></li>
+      <li><a href="/read">Read the Guestbook</a></li>
+    </ul>
+    <h2>Enter a Blog</h2>
+    <ul class="bloglink">
+      <li><a href="http://chojja7.tistory.com" target="_blank">Tistory Blog</a></li>
+      <li><a href="http://chojja.kro.kr" target="_blank">Naver Blog</a></li>
+    </ul>
+  </div>
+  <div class="contents">
+    <ul class="project-list">
+      <div class="guestbooktext"><center>Guestbook</center></div>
+      <% for(var i=0; i < gb.length; i++) { %>
+        <table class="readtable">
+          <tr height=30>
+            <td width=100 id="readname"><%= gb[i].name %></td>
+            <td width=220><%= gb[i].email %></td>
+            <form action="/de1ete/<%= gb[i]._id %>" method="post">
+              <td><input type="password" name="delpw" placeholder="Enter a password"></td>
+              <td><input class="delbut" type="submit" value="Delete"/></td>
+            </form>
+          </tr>
+          <tr height=50>
+            <td colspan=4><%= gb[i].content %></td>
+          </tr>
+          <tr>
+            <td colspan=4 id="readdate"><%= gb[i].createdDate %></td>
+          </tr>
+          <tr>
+            <td><%= gb[i].living %></td>
+          </tr>
+        </table>
+        <% } %>
+  </div>
+  </div>
+  </body>
+</html>
